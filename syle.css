@@ -1,0 +1,684 @@
+:root {
+    --upload-bg_color: rgb(250, 250, 250, 0.1);
+    --primary-color: #f67464;
+    --input-bg: rgba(48, 47, 78, 0.4);
+    --hover_state: 2.5px solid black;
+    --border: rgb(250, 250, 250, 0.8);
+    --bg-color: rgb(250, 250, 250, 0.2);
+
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Inconsolata;
+    background-image: url(./assets/images/pattern-lines.svg), url(./assets/images/background-desktop.png);
+    background-repeat: no-repeat, no-repeat;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-size: cover, cover;
+    background-position: center, top;
+    color: white;
+    height: 81.8rem;
+    overflow-x: hidden;
+    height: 81.8rem;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Inconsolata;
+    font-weight: 600;
+    src: url("./assets/fonts/Inconsolata-Bold.ttf");
+}
+
+@font-face {
+    font-family: Inconsolata;
+    font-weight: 700;
+    src: url("./assets/fonts/Inconsolata-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Inconsolata;
+    font-weight: 400;
+    src: url("./assets/fonts/Inconsolata-Medium.ttf");
+}
+
+@font-face {
+    font-family: Inconsolata;
+    font-weight: 300;
+    src: url("./assets/fonts/Inconsolata-Regular.ttf");
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    position: relative;
+    top: 1rem;
+    left: -2rem;
+}
+
+.logo {
+    width: 18rem;
+}
+
+.squiggly {
+    float: inline-end;
+}
+
+.opening_text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 35.8rem;
+}
+
+.conf_header-dekstop {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.secure-dekstop {
+    color: var(--border);
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.form_section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 31rem;
+    transform: translate(50rem, 21.2rem);
+}
+
+.avatar {
+    padding-left: 2.2rem;
+    font-size: 1.1rem;
+}
+
+.upload {
+    display: flex;
+    background-color: var(--upload-bg_color);
+    border: 1px dashed var(--border);
+    width: 27rem;
+    height: 8.5rem;
+    margin-left: 2rem;
+    border-radius: 0.625rem;
+}
+
+.upload:hover {
+    background-color: var(--bg-color);
+    outline: 1px solid var(--border);
+    border: var(--hover_state);
+}
+
+.upload_item1 {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--bg-color);
+    margin-top: 2rem;
+    margin-left: 12rem;
+    padding-left: 0.6rem;
+    padding-top: 0.5rem;
+    border-radius: 0.625rem;
+}
+
+.upload_icon {
+    height: 3rem;
+    width: 3.2rem;
+    margin-left: -0.6rem;
+    margin-top: -0.5rem;
+    border-radius: 0.625rem;
+}
+
+#upload_image {
+    display: none;
+}
+
+.upload_item2 {
+    margin-top: 5rem;
+    margin-left: -11rem;
+}
+
+.upload_item2 p {
+    margin-left: 1.5rem;
+}
+
+.edit {
+    display: flex;
+    gap: 1rem;
+    width: 20rem;
+    margin-top: 1rem;
+    margin-left: 2.3rem;
+}
+
+.edit-btn {
+    color: white;
+    background-color: var(--upload-bg_color);
+    width: 7rem;
+    height: 1.8rem;
+    border: none;
+}
+
+.edit-btn:hover {
+    text-decoration: underline;
+}
+
+.info_icon img {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.file_info {
+    margin-left: 3.5rem;
+    margin-top: -1.055rem;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.input {
+    display: flex;
+    gap: 2.2rem;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+input {
+    border: 1px solid var(--bg-color);
+    background-color: var(--input-bg);
+    margin-top: 0.30rem;
+    width: 26rem;
+    height: 3rem;
+    border-radius: 0.625rem;
+    position: relative;
+}
+
+input:hover {
+    background-color: var(--bg-color);
+    outline: 1px solid var(--border);
+    border: var(--hover_state);
+}
+
+#full_name {
+    width: 26rem;
+}
+
+input::placeholder,
+#full_name,
+input {
+    color: white;
+    padding-left: 0.80rem;
+}
+
+.ticket-btn {
+    width: 27rem;
+    height: 2.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    font-size: 1.19rem;
+    font-weight: 600;
+    padding-right: 1.5rem;
+}
+
+.ticket-btn:hover {
+    outline: var(--border_hover-state);
+    border: var(--hover_state);
+}
+
+.validateEmail {
+    color: var(--primary-color);
+    font-size: 0.71rem;
+    margin-left: 1.5rem;
+}
+
+.info_icon2 {
+    transform: translateY(5.35rem);
+}
+
+.circle_pattern {
+    margin: 0 auto;
+    transform: translate(32rem, -6rem);
+}
+
+.squiggly_bottom {
+    float: inline-start;
+    position: relative;
+    top: 8rem;
+    left: -2rem;
+    width: 45rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Ticket*/
+
+.ticket_section {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    max-width: fit-content;
+    position: relative;
+    top: 35.8rem;
+    left: 47rem;
+}
+
+.ticket {
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(259, 25%, 26%, 0.7);
+    border: 1px solid rgb(238, 236, 236);
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+    font-size: 0.75rem;
+    width: 28.125rem;
+    height: 14.375rem;
+}
+
+.ticket_number {
+    display: flex;
+    background-color: hsla(259, 25%, 26%, 0.7);
+    border-left: 1px dotted rgb(250, 250, 250, 0.35);
+    border-right: 1px solid var(--primary-color);
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    font-size: 0.75rem;
+    width: 5rem;
+    height: 14.4375rem;
+}
+
+.cut-out-top {
+    display: flex;
+    background-color: rgb(5, 2, 47);
+    border-bottom: 1px solid var(--primary-color);
+    border-bottom-left-radius: 1.875rem;
+    border-bottom-right-radius: 1.875rem;
+    border-top: none;
+    width: 2.5rem;
+    position: absolute;
+    right: 3.8rem;
+    top: -0.95rem;
+}
+
+.cut-out-bottom {
+    display: flex;
+    background-color: #07022b;
+    border-top: 1px solid var(--primary-color);
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+    border-bottom: none;
+    width: 2.5rem;
+    position: absolute;
+    right: 3.8rem;
+    top: 13.5rem;
+}
+
+.conf_logo {
+    width: 18rem;
+    margin-left: -2rem;
+}
+
+.ticket_texts{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 18rem;
+    left: 35.8rem;
+}
+
+.header_text {
+    font-size: 4.8rem;
+    text-align: center;
+    position: relative;
+    top: -9rem;
+    left: -1.8rem;
+}
+
+.email-text {
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+    text-align: center;
+    margin: -9rem 0 0 -3.8rem;
+}
+
+.ticket_logo {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    width: 15rem;
+}
+
+.location {
+    font-size: 1rem;
+    margin-left: 5rem;
+    margin-top: 3.7rem;
+    position: absolute;
+}
+
+.user_image {
+    max-width: 4rem;
+    max-height: 4rem;
+    border-radius: 0.6rem;
+    margin-top: 5.5rem;
+    margin-left: 1.5rem;
+
+}
+
+.user_name,
+.github_logo {
+    font-size: 1.5rem;
+    margin-left: 6.3rem;
+    margin-top: -4rem;
+}
+
+.github_username {
+    font-size: 1rem;
+    margin-left: 8.2rem;
+    margin-top: -1.4rem;
+}
+
+.ticket_id {
+    color: rgb(173, 165, 165);
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-top: 4.8rem;
+    margin-left: 1.3rem;
+    writing-mode: vertical-lr;
+}
+
+.squiggly_ticket {
+    transform: translateY(25.8rem);
+    float: left;
+    width: 45rem;
+}
+
+.circle_pattern_ticket{
+    transform: translate(32rem, 15rem);
+}
+
+
+
+
+
+/*Dekstop*/
+@media (min-width: 1200px) {
+    .conf_header-mobile {
+        display: none;
+    }
+
+    .secure-mobile {
+        display: none;
+    }
+}
+
+
+
+/*Mobile Design*/
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        max-width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
+        /* overflow-y: auto; */
+    }
+
+    body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Inconsolata;
+        background-image: url(./assets/images/pattern-lines.svg), url(./assets/images/background-desktop.png);
+        background-repeat: no-repeat, no-repeat;
+        background-color: rgb(0, 0, 0, 0.5);
+        background-size: auto, cover;
+        background-position: top, top;
+        color: white;
+        /* overflow-x: hidden;
+        overflow-y: auto; */
+    }
+
+    header {
+        left: 7rem;
+        width: fit-content;
+    }
+
+    .logo {
+        width: 11.6rem;
+    }
+
+    .squiggly {
+        width: 10rem;
+        margin-top: -3rem;
+    }
+
+    .circle_pattern {
+        transform: translate(-18rem, -42rem);
+    }
+
+    .opening_text {
+        align-items: center;
+        left: 3.5rem;
+        top: 6rem;
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .conf_header-dekstop {
+        display: none;
+    }
+
+    .conf_header-mobile {
+        font-size: 1.75rem;
+        max-width: 100%;
+    }
+
+    .secure-dekstop {
+        display: none;
+    }
+
+    .secure-mobile {
+        color: var(--border);
+        font-size: 1rem;
+        font-weight: 200;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .form_section {
+        transform: translate(2.8rem, 10rem);
+    }
+
+    .avatar {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+        margin-left: 0.3rem;
+    }
+
+    .upload {
+        width: 20.96rem;
+    }
+
+    .upload_icon {
+        margin-left: -0.92rem;
+    }
+
+    .upload_item1 {
+        margin-left: 8.8rem;
+    }
+
+    .upload_item2 {
+        margin-left: -10rem;
+    }
+
+    .upload_item2 p {
+        font-size: 0.9rem;
+        margin-left: 1.8rem;
+    }
+
+    .info_icon img {
+        width: 0.85rem;
+    }
+
+    .edit-btn {
+        margin-left: 0.2rem;
+        font-size: 0.6rem;
+        width: 5rem;
+    }
+
+    .file_info {
+        font-size: 0.6rem;
+        margin-top: -0.85rem;
+    }
+
+    input {
+        width: 20rem;
+    }
+
+    #full_name {
+        width: 20rem;
+    }
+
+    .ticket-btn {
+        margin-top: 20rem;
+        position: absolute;
+        width: 21rem;
+    }
+
+    .circle_pattern {
+        transform: translate(23rem, -30rem);
+    }
+
+    .squiggly_bottom {
+        width: 27rem;
+        top: 2rem;
+        left: -5rem;
+    }
+
+
+
+
+    /*Ticket*/
+
+    header {
+        top: 3rem;
+        left: 10.5rem;
+    }
+
+    .conf_logo {
+        width: 12.6rem;
+    }
+
+    .squiggly_logo {
+        width: 10rem;
+    }
+
+    .circle_pattern_ticket {
+        transform: translate(24rem, 1rem);
+       
+    }
+
+    .ticket_texts {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: 1rem;
+        position: absolute;
+        top: 15rem;
+        left: 2rem;
+    }
+
+    .header_text {
+        font-size: 2rem;
+        top: 1rem;
+        left: 0.5rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .email-text {
+        font-size: 0.98rem;
+        line-height: 1.7rem;
+        margin: 0 auto;
+    }
+
+    .ticket_section {
+        top: 30rem;
+        left: 3rem;
+    }
+
+    .ticket {
+        width: 18rem;
+        height: 12rem;
+    }
+
+    .ticket_number {
+        height: 12rem;
+    }
+
+    .cut-out-bottom {
+        top: 11rem;
+    }
+
+    .ticket_logo {
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+        width: 10rem;
+    }
+
+    .location {
+        font-size: 0.8rem;
+        margin-left: 3.5rem;
+    }
+
+    .user_image {
+        max-width: 3.5rem;
+        max-height: 4rem;
+        margin-top: 3.5rem;
+        margin-left: 1rem;
+    }
+
+    .user_name,
+    .github_logo {
+        font-size: 1rem;
+        margin-left: 5.2rem;
+        margin-top: -3rem;
+    }
+
+    .github_username {
+        font-size: 0.8rem;
+        margin-left: 6.7rem;
+        margin-top: -1.2rem;
+    }
+
+    .ticket_id {
+        margin-top: 4rem;
+    }
+
+    .squiggly_ticket {
+        width: 27rem;
+        transform: translateY(40rem);
+    }
+}

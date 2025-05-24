@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference</title>
+    <link href="./syle.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+    <script src="./ticket.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/images/logo-full.svg" alt="logo" class="logo" />
+    </header>
+
+    <img src="./assets/images/pattern-squiggly-line-top.svg" alt="layout" class="squiggly" />
+
+    <main>
+        <section class="opening_text">
+            <h1 class="conf_header-dekstop">Your Journey to Coding Conf<br />2025 Starts Here! </h1>
+            <h1 class="conf_header-mobile">Your Journey to Coding<br /> Conf 2025 Starts Here! </h1>
+            <p class="secure-dekstop">Secure your spot at next year's biggest coding conference.</p>
+            <p class="secure-mobile">Secure your spot at next year's <br /> biggest coding conference.</p>
+        </section>
+        <section class="ticket_texts"></section>
+
+        <section class="form_section">
+            <p class="avatar">Upload Avatar</p>
+            <div class="upload">
+                <div class="upload_item1">
+                    <label for="upload_image" class="drop_area">
+                        <img src="./assets/images/icon-upload.svg" alt="upload icon" class="upload_icon" />
+                    </label>
+                    <input type="file" id="upload_image" accept="image/jpg, image/png" />
+                </div>
+
+                <div class="upload_item2">
+                    <p>Drag and drop or click to upload</p>
+                    <div class="edit">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info_icon">
+                <img src="./assets/images/icon-info.svg" alt="info icon" />
+            </div>
+            <p class="file_info">Upload your photo (JPG/JPEG or PNG, max size 500kb).</p>
+
+            <div class="input">
+                <div class="full_name">
+                    <label for="full_name">Full Name</label> <br />
+                    <input type="text" id="full_name" required />
+                </div>
+
+                <div class="email-input">
+                    <label for="email">Email Address</label> <br />
+                    <input type="email" id="email" placeholder="example@email.com" required />
+                </div>
+
+                <div class="github">
+                    <label for="github">Github Username</label> <br />
+                    <input type="text" id="github" placeholder="@yourusername" required />
+                </div>
+                <button type="submit" class="ticket-btn">Generate My Ticket</button>
+            </div>
+        </section>
+        <section class="img_bg">
+            <img src="./assets/images/pattern-circle.svg" class="circle_pattern" />
+            <img src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" class="squiggly_bottom" />
+        </section>
+    </main>
+</body>
+
+</html>
