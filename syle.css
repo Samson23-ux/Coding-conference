@@ -585,7 +585,7 @@ input {
 
     header {
         top: 3rem;
-        left: 10.5rem;
+        left: 8.5rem;
     }
 
     .conf_logo {
@@ -608,7 +608,7 @@ input {
         gap: 1rem;
         position: absolute;
         top: 15rem;
-        left: 2rem;
+        left: 1rem;
     }
 
     .header_text {
@@ -627,7 +627,7 @@ input {
 
     .ticket_section {
         top: 30rem;
-        left: 3rem;
+        left: 1.89rem;
     }
 
     .ticket {
