@@ -464,6 +464,7 @@ input {
 
     .logo {
         width: 11.6rem;
+        margin-left: -2rem;
     }
 
     .squiggly {
@@ -505,7 +506,7 @@ input {
     }
 
     .form_section {
-        transform: translate(2.8rem, 10rem);
+        transform: translate(1.3rem, 10rem);
     }
 
     .avatar {
