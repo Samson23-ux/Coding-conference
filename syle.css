@@ -71,7 +71,7 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 35.8rem;
+    left: 28rem;
 }
 
 .conf_header-dekstop {
@@ -91,7 +91,7 @@ header {
     flex-direction: column;
     max-width: 100%;
     width: 31rem;
-    transform: translate(50rem, 21.2rem);
+    transform: translate(43rem, 21.2rem);
 }
 
 .avatar {
