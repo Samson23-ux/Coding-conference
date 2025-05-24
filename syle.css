@@ -275,8 +275,8 @@ input {
     width: fit-content;
     max-width: fit-content;
     position: relative;
-    top: 35.8rem;
-    left: 47rem;
+    top: 33rem;
+    left: 40rem;
 }
 
 .ticket {
@@ -341,7 +341,7 @@ input {
     flex-direction: column;
     position: absolute;
     top: 18rem;
-    left: 35.8rem;
+    left: 28rem;
 }
 
 .header_text {
