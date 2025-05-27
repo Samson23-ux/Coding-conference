@@ -54,9 +54,6 @@ header {
     justify-content: center;
     align-items: center;
     height: 5rem;
-    position: relative;
-    top: 1rem;
-    left: -2rem;
 }
 
 .logo {
@@ -71,7 +68,7 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 28rem;
+    left: 35.8rem;
 }
 
 .conf_header-dekstop {
@@ -91,7 +88,7 @@ header {
     flex-direction: column;
     max-width: 100%;
     width: 31rem;
-    transform: translate(43rem, 21.2rem);
+    transform: translate(50rem, 21.2rem);
 }
 
 .avatar {
@@ -275,8 +272,8 @@ input {
     width: fit-content;
     max-width: fit-content;
     position: relative;
-    top: 33rem;
-    left: 42rem;
+    top: 35.8rem;
+    left: 47rem;
 }
 
 .ticket {
@@ -336,12 +333,12 @@ input {
     margin-left: -2rem;
 }
 
-.ticket_texts{
+.ticket_texts {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 18rem;
-    left: 30rem;
+    left: 35.8rem;
 }
 
 .header_text {
@@ -410,7 +407,7 @@ input {
     width: 45rem;
 }
 
-.circle_pattern_ticket{
+.circle_pattern_ticket {
     transform: translate(32rem, 15rem);
 }
 
@@ -458,18 +455,16 @@ input {
     }
 
     header {
-        left: 5.2rem;
-        width: fit-content;
+        width: 100vw;
     }
 
     .logo {
-        width: 11.6rem;
-        margin-left: -2rem;
+        width: 12.8rem;
     }
 
     .squiggly {
-        width: 10rem;
-        margin-top: -3rem;
+        width: 7rem;
+        margin-top: -1.5rem;
     }
 
     .circle_pattern {
@@ -478,10 +473,10 @@ input {
 
     .opening_text {
         align-items: center;
-        left: 3.5rem;
-        top: 6rem;
-        width: 80%;
-        max-width: 80%;
+        /* left: 3.1rem; */
+        left: 12vw;
+        top: 7.5rem;
+        width: 80vw;
     }
 
     .conf_header-dekstop {
@@ -489,7 +484,8 @@ input {
     }
 
     .conf_header-mobile {
-        font-size: 1.75rem;
+        /* font-size: 1.3rem; */
+        font-size: 6vw;
         max-width: 100%;
     }
 
@@ -499,14 +495,18 @@ input {
 
     .secure-mobile {
         color: var(--border);
-        font-size: 1rem;
+        /* font-size: 0.8rem; */
+        font-size: 3.5vw;
         font-weight: 200;
         text-align: center;
         max-width: 100%;
+
     }
 
     .form_section {
-        transform: translate(1.3rem, 10rem);
+        transform: translate(5.5vw, 11rem);
+        /* width: 95%; */
+        width: 93vw;
     }
 
     .avatar {
@@ -519,7 +519,7 @@ input {
     }
 
     .upload {
-        width: 20.96rem;
+        width: 79vw;
     }
 
     .upload_icon {
@@ -527,7 +527,7 @@ input {
     }
 
     .upload_item1 {
-        margin-left: 8.8rem;
+        margin-left: 42%;
     }
 
     .upload_item2 {
@@ -535,8 +535,8 @@ input {
     }
 
     .upload_item2 p {
-        font-size: 0.9rem;
-        margin-left: 1.8rem;
+        font-size: 0.79rem;
+        margin-left: 10%;
     }
 
     .info_icon img {
@@ -555,17 +555,20 @@ input {
     }
 
     input {
-        width: 20rem;
+        /* width: 18.7rem; */
+        width: 75vw;
     }
 
     #full_name {
-        width: 20rem;
+        /* width: 18.7rem; */
+        width: 75vw;
     }
 
     .ticket-btn {
         margin-top: 20rem;
         position: absolute;
-        width: 21rem;
+        /* width: 19.8rem; */
+        width: 80vw;
     }
 
     .circle_pattern {
@@ -584,8 +587,7 @@ input {
     /*Ticket*/
 
     header {
-        top: 3rem;
-        left: 8.5rem;
+        width: 100vw;
     }
 
     .conf_logo {
@@ -598,21 +600,21 @@ input {
 
     .circle_pattern_ticket {
         transform: translate(24rem, 1rem);
-       
+
     }
 
     .ticket_texts {
         display: flex;
         flex-direction: column;
-        width: fit-content;
-        gap: 1rem;
+        width: 90vw;
+        gap: 3rem;
         position: absolute;
-        top: 15rem;
+        top: 13rem;
         left: 1rem;
     }
 
     .header_text {
-        font-size: 2rem;
+        font-size: 7.2vw;
         top: 1rem;
         left: 0.5rem;
         text-align: center;
@@ -620,18 +622,19 @@ input {
     }
 
     .email-text {
-        font-size: 0.98rem;
+        font-size: 4.2vw;
         line-height: 1.7rem;
         margin: 0 auto;
     }
 
     .ticket_section {
-        top: 30rem;
-        left: 1.89rem;
+        top: 28.8rem;
+        left: 2.4rem;
     }
 
     .ticket {
-        width: 18rem;
+        /* width: 18rem; */
+        width: 62vw;
         height: 12rem;
     }
 
@@ -650,7 +653,8 @@ input {
     }
 
     .location {
-        font-size: 0.8rem;
+        /* font-size: 0.8rem; */
+        font-size: 3vw;
         margin-left: 3.5rem;
     }
 
@@ -663,13 +667,15 @@ input {
 
     .user_name,
     .github_logo {
-        font-size: 1rem;
+        /* font-size: 1rem; */
+        font-size: 5vw;
         margin-left: 5.2rem;
         margin-top: -3rem;
     }
 
     .github_username {
-        font-size: 0.8rem;
+        /* font-size: 0.8rem; */
+        font-size: 3.2vw;
         margin-left: 6.7rem;
         margin-top: -1.2rem;
     }
